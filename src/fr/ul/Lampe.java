@@ -1,3 +1,5 @@
+package fr.ul;
+
 public class Lampe {
     private String nom;
     private boolean allume;

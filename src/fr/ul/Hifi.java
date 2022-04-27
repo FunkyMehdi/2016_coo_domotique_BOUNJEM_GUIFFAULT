@@ -1,3 +1,5 @@
+package fr.ul;
+
 /**
  * classe qui represente une chaine hifi
  */
@@ -28,13 +30,13 @@ class Hifi {
 	}
 
 	/**
-	 * surcharge de la methode affichage sous la forme "Hifi:10"
+	 * surcharge de la methode affichage sous la forme "fr.ul.Hifi:10"
 	 * 
 	 * @return descriptif sous forme de chaine
 	 */
 	public String toString() {
 		String r = "";
-		r += "Hifi:" + son;
+		r += "fr.ul.Hifi:" + son;
 		return (r);
 	}
 }
