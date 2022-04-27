@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TelecommandeTest {
     @Test
+    /**
+     * test ajout lampe avec telecommande vide
+     */
     public void test_ajoutlampe_televide(){
         // preparation des donnees
         Lampe l = new Lampe("Lampe");
@@ -19,6 +22,9 @@ public class TelecommandeTest {
     }
 
     @Test
+    /**
+     * test ajout lampe avec un element
+     */
     public void test_ajoutLampe_teleavecunelement(){
         // preparation des donnees
         Lampe l = new Lampe("Lampe1");
@@ -34,6 +40,9 @@ public class TelecommandeTest {
     }
 
     @Test
+    /**
+     * test activer premiere lampe
+     */
     public void test_activer_Lampe_existante_P0(){
         // preparation des donnees
         Lampe l = new Lampe("Lampe");
@@ -48,15 +57,18 @@ public class TelecommandeTest {
     }
 
     @Test
+    /**
+     * test activer deuxieme lampe
+     */
     public void test_activer_Lampe_existante_P1(){
         // preparation des donnees
-        Lampe l = new Lampe("Lampe");
+        Lampe l = new Lampe("lampe");
         Telecommande telecommande = new Telecommande();
         telecommande.ajouterLampe(l);
         telecommande.activerLampe(0);
 
         //methode testee
-        Lampe ll = new Lampe("Lampe2");
+        Lampe ll = new Lampe("lampe2");
         telecommande.ajouterLampe(ll);
         telecommande.activerLampe(1);
 
@@ -65,6 +77,9 @@ public class TelecommandeTest {
     }
 
     @Test
+    /**
+     * test activer lampe inexistante
+     */
     public void testLampeinnexistante(){
         // preparation des donnees
         Telecommande telecommande = new Telecommande();

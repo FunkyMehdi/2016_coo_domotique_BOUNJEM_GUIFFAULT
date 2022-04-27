@@ -39,4 +39,10 @@ class Hifi {
 		r += "fr.ul.Hifi:" + son;
 		return (r);
 	}
+
+	public void setSon(int volume){
+		if (volume >=0 && volume<= 100){
+			this.son = volume;
+		}
+	}
 }

@@ -18,13 +18,13 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertFalse(res, "une nouvelle lampe devrait etre eteinte");
+		assertFalse(res, "Une nouvelle lampe devrait être eteinte.");
 	}
 
 
 
 	/**
-	 * test allumer une lampe eteinte
+	 * test allumer une lampe éteinte
 	 */
 	@Test
 	public void testAllumer() {
@@ -36,12 +36,12 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertTrue(res, "apres allumer, la lampe devrait etre allumee");
+		assertTrue(res, "Après allumer, la lampe devrait être allumée.");
 	}
 
 	@Test
 	/**
-	 * test allumer une lampe allumee
+	 * test allumer une lampe allumée
 	 */
 	public void testAllumer_allumee() {
 		// preparation des donnees
@@ -53,12 +53,12 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertTrue(res,"apres allumer, la lampe devrait etre allumee");
+		assertTrue(res,"Après allumer, la lampe devrait être allumée");
 	}
 
 	@Test
 	/**
-	 * test eteindre une lampe allumee
+	 * test éteindre une lampe allumée
 	 */
 	public void testeteindre_allumee() {
 		// preparation des donnees
@@ -70,12 +70,12 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertFalse(res,"apres eteindre, la lampe devrait etre eteinte");
+		assertFalse(res,"Après éteindre, la lampe devrait être éteinte.");
 	}
 
 	@Test
 	/**
-	 * test to String lampe eteinte
+	 * test to String lampe éteinte
 	 */
 	public void testToString_eteinte() {
 		// preparation des donnees
@@ -85,12 +85,12 @@ public class LampeTest {
 		String r=""+l;
 
 		//verification
-		assertEquals("lampe1: Off",r,"affichage devrait etr off");
+		assertEquals("lampe1: Off",r,"L'affichage devrait être off.");
 	}
 
 	@Test
 	/**
-	 * test to String lampe allumee
+	 * test to String lampe allumée
 	 */
 	public void testToString_allumee() {
 		// preparation des donnees
@@ -101,7 +101,7 @@ public class LampeTest {
 		String r=""+l;
 
 		//verification
-		assertEquals("lampe1: On",r,"affichage devrait etr off");
+		assertEquals("lampe1: On",r,"L'affichage devrait être off.");
 
 	}
 
