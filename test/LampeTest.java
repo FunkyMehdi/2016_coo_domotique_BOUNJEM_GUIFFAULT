@@ -1,3 +1,4 @@
+import fr.ul.Lampe;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,6 +20,7 @@ public class LampeTest {
 		boolean res = l.isAllume();
 		assertFalse(res, "une nouvelle lampe devrait etre eteinte");
 	}
+
 
 
 	/**

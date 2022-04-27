@@ -7,7 +7,7 @@ public class Telecommande {
     private List<Lampe> lampes;
 
     public Telecommande (){
-        List<Lampe> l = new ArrayList<>();
+        this.lampes = new ArrayList<>();
     }
 
     public void ajouterLampe(Lampe lampe){
@@ -35,4 +35,9 @@ public class Telecommande {
         }
         return aff;
     }
+
+    public List<Lampe> getLampes() {
+        return lampes;
+    }
 }
+
